@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Baloo Tamma 2', sans-serif;
+}
+  /* Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #BB6B24;
+  padding-right: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 3em;
+  z-index: 100;
+  color: white;
+}
+#header-img {
+  height: 100%;
+  margin-right: auto;
+}
+#name {
+  position: absolute;
+  font-size: 2.35vw;
+}
+@media (max-width: 650px) {
+  #name {
+    font-size: 0;
+  }
+}
+#nav-bar {
+  margin-left: auto;
+}
+nav ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  padding: 0.625em 1em;
+}
+.nav-link:hover {
+    background-color: #BB7B24;
+}
+#shop-title {
+  margin-top: 60px; /* To put the rest of the page after the  header which is out of the normal flow due to fixed position */
+  text-align: center;
+}
+  /* Products */
+.product-container {
+  text-align: center;
+  display: flex;
+  justify-content: center; /* use center then margin on items to space */
+}
+.variant-container {
+  border: solid black;
+  box-shadow: 2px 2px 8px 0px rgba(0,0,0,0.5);
+  padding: 2rem;
+  width: 33%;
+  margin: 0.8em 1.5em;
+  position: relative;
+  padding-bottom: 7rem; /* For add to cart button which is out of normal flow */
+}
+@media (min-width: 850px) and (max-width: 1000px) {
+  .variant-container {
+    margin: 0.8em 0.50em;
+  }
+}
+.product-img {
+  width: 20vw;
+  margin: 1em auto;
+  height: 20vw; /* Makes image stay same ratio when width decreases */
+}
+.description {
+  display: block;
+  font-size: 1.2vw;
+  text-align: justify;
+}
+.add-cart {
+  width: 80%;
+  position: absolute;
+  bottom: 2vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 1vw;
+  padding: 0.3vw;
+  border: solid 1px black;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-appearance:none
+}
+.add-cart:hover {
+  background-color: #BB6B24;
+  color: white;
+}
+.variant-title {
+  font-size: 1.4vw;
+}
+@media (max-width: 850px) {
+  .product-container {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .variant-container {
+    width: 90%;
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+  .description {
+    font-size: 1em;
+  }
+  .add-cart {
+    font-size: 1em;
+  }
+  .variant-title {
+  font-size: 1.1em;
+}
+}
+/* Video */
+#video {
+  display: block;
+  margin: 3em auto 2em auto;
+  width: 35vw;
+  height: 20vw;
+  max-width: 100%;
+  /* border: solid 6px #BB6B24; */
+}
+@media (max-width: 850px) {
+  #video {
+    width: 75%;
+    height: 40%;
+  }
+}
+/* Story */
+.blog {
+  width: 60%;
+  margin: auto;
+  text-align: justify;
+}
+@media (max-width: 850px) {
+  .blog {
+    width: 80%;
+  }
+}
+/* Form */
+#form {
+  text-align: center;
+  margin: 2em auto 0 auto;
+  padding: 4em;
+  background-image: url(https://t3.ftcdn.net/jpg/01/04/41/92/240_F_104419238_TgN5UfvsW3zw0yccIsW1AMqum59GzULJ.jpg);
+}
+#subscribe {
+  display: inline-block;
+  background-color: white;
+  color: #93592d;
+  margin: auto;
+}
+#email-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+#email {
+  border: solid 1px #93592d;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+  padding: 3px 5px;
+  margin-right: 3px;
+}
+#submit {
+  font-size: 1em;
+  width: 5em;
+  border: solid 1px #93592d;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+  -webkit-appearance:none;
+}
